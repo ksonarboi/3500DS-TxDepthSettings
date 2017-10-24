@@ -131,7 +131,7 @@ public:
     m_tpuHandle(NULL), m_spuIP(spu) { }
 
   virtual ~SPUStatusInterface(void)
-    { if (m_tpuHandle); { DllCloseTheTpu(m_tpuHandle); } }
+    { if (m_tpuHandle) { DllCloseTheTpu(m_tpuHandle); } }
 
   // after constuction, invoke 
   const int execute()
